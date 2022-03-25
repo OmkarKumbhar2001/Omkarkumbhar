@@ -1,0 +1,175 @@
+*{
+    padding: 0rem;
+    margin: 0rem;
+}
+
+li{
+    padding: 1.3rem;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+.main{
+    padding: 4% 7%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+.heading{
+    color: rgb(60, 64, 92);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3rem;
+    padding-top: 4rem;
+    padding-bottom: 1.4rem;
+}
+b{
+    /* color: rgb(112, 112, 112); */
+    text-align: center; 
+    font-weight:lighter;
+}
+.box{
+    margin-top: 1rem;
+    width:50%;
+    height:0.2rem;
+    background-color:rgb(0, 0, 0);
+    animation-name: omi;
+    animation-duration:3s;
+    animation-iteration-count: 1;
+}
+@keyframes omi{
+    from{
+        width: 0.1rem;
+    }
+    to{
+        width: 50%;
+    }
+}
+.Fill{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.meditaion{
+    width: 110%;
+}
+.fill-form{
+    width: 45%;
+}
+form{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    gap: 1.6rem;
+    /* align-items: center; */
+    width: 100%;
+}
+form input,textarea{
+ width: 100%;
+ border: none;
+ border-bottom:2px solid black;
+ background: none;
+ /* margin: 2rem auto 0.2rem auto; */
+ outline: none; 
+}
+input:active{
+    background: none;
+    font-size: larger;
+
+}
+::placeholder{
+    color: black;
+    font-size: larger;
+    padding: 0.3rem;
+}
+.text{
+    width: 100%;
+    padding: 0.3rem 0rem 0.3rem 0.3rem;
+}
+.btn-1{
+    width: 100%;
+    border-radius: 5px;
+    background-color: rgb(159, 223, 130);
+    color: #fff;
+    border: none;
+    height: 2rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 1.5rem;
+}
+.btn-1:hover{
+    background-color:rgb(182, 218, 166) ;
+    cursor: pointer;
+}
+/* footer */
+.Footer{
+    background-color: rgb(163, 163, 163);
+    height: 40vh;
+}
+.media-1{
+    display: flex;
+    margin: auto;
+    width: 50%;
+    height: 10rem;
+    align-items: center;
+    justify-content:space-around;
+    align-content: center;
+}
+.smedia{
+    transition: all 2 ease-in-out 0s;
+   width: 120%;
+}
+.smedia:hover{
+    transform: scale(1.05);
+    filter:grayscale(100);
+    box-shadow: -0.8rem 0.8rem 1.5rem hsl(192, 100%, 12%);
+    cursor: pointer;
+}
+.end{
+    color: #fff;
+    text-align: center;
+    font-size: 1.2rem;
+}
+@media (max-width: 896px){
+    .contact{
+        height: 85rem;
+    }
+    .Fill{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        flex-wrap: wrap;
+        align-content: center;
+        width: 100%;
+    }
+    .main-img{
+        text-align: center;
+
+    }
+    .meditaion{
+        width: 80%;
+    }
+    .fill-form{
+        width: 95%;
+    }
+    .enter{
+        width: 100%;
+        margin: 0.5rem 0rem 1rem 0rem;
+        padding: 0.3rem 0rem 0.3rem 0.5rem;
+      
+    }
+    .text{
+        width: 100%;
+        border-radius: 5px;
+        padding: 0.3rem 0rem 0.3rem 0.3rem;
+    }
+    .btn-1{
+        width: 100%;
+        border: none;
+        height: 2rem;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        margin-top: 1.5rem;
+    }
+}
